@@ -1,0 +1,24 @@
+myhostname = kali.local
+mydomain = local
+myorigin = $myhostname
+
+inet_interfaces = loopback-only
+inet_protocols = ipv4
+
+mydestination = $myhostname, localhost.$mydomain, localhost
+
+# Gmail
+relayhost = [smtp.gmail.com]:587
+
+# Аутентификация
+smtp_sasl_auth_enable = yes
+smtp_sasl_password_maps = hash:/etc/postfix/sasl_passwd
+smtp_sasl_security_options = noanonymous
+smtp_tls_CAfile = /etc/ssl/certs/ca-certificates.crt
+smtp_use_tls = yes
+smtp_tls_security_level = encrypt
+
+biff = no
+append_dot_mydomain = no
+readme_directory = no
+smtpd_banner = $myhostname ESMTP

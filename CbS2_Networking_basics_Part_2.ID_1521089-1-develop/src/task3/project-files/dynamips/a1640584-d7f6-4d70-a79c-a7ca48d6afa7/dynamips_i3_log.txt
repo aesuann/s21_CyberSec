@@ -1,0 +1,75 @@
+May 22 08:51:43.162 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+May 22 08:51:43.162 HYPERVISOR: Started on IP = localhost, TCP port = 65059.
+May 22 08:51:43.651 HYPERVISOR: exec_cmd: hypervisor version 
+May 22 08:51:43.651 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\rin\GNS3\projects\untitled\project-files\dynamips 
+May 22 08:51:43.651 GENERAL: working_dir=C:\Users\rin\GNS3\projects\untitled\project-files\dynamips
+May 22 08:51:43.651 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\rin\GNS3\projects\untitled\project-files\dynamips\2aea58ca-c566-4496-8414-dc12f946ecb7 
+May 22 08:51:43.651 GENERAL: working_dir=C:\Users\rin\GNS3\projects\untitled\project-files\dynamips\2aea58ca-c566-4496-8414-dc12f946ecb7
+May 22 08:51:43.651 HYPERVISOR: exec_cmd: vm create R3 3 c3745 
+May 22 08:51:43.651 VM: VM R3 created.
+May 22 08:51:43.651 HYPERVISOR: exec_cmd: vm set_con_tcp_port R3 5002 
+May 22 08:51:43.651 HYPERVISOR: exec_cmd: c3745 get_mac_addr R3 
+May 22 08:51:43.651 HYPERVISOR: exec_cmd: vm set_ios R3 C:/Users/rin/GNS3/images/IOS/c3745-adventerprisek9-mz.124-25.image 
+May 22 08:51:43.651 HYPERVISOR: exec_cmd: vm get_status R3 
+May 22 08:51:43.651 HYPERVISOR: exec_cmd: vm set_idle_pc R3 0x6026e7b8 
+May 22 08:51:43.651 HYPERVISOR: exec_cmd: vm set_exec_area R3 64 
+May 22 08:51:43.651 HYPERVISOR: exec_cmd: vm set_nvram R3 256 
+May 22 08:51:43.665 HYPERVISOR: exec_cmd: vm set_disk0 R3 0 
+May 22 08:51:43.667 HYPERVISOR: exec_cmd: vm get_status R3 
+May 22 08:51:43.667 HYPERVISOR: exec_cmd: vm slot_add_binding R3 1 0 NM-1FE-TX 
+May 22 08:51:43.667 HYPERVISOR: exec_cmd: vm get_status R3 
+May 22 08:51:43.667 HYPERVISOR: exec_cmd: vm slot_add_binding R3 2 0 NM-4T 
+May 22 08:51:43.667 HYPERVISOR: exec_cmd: vm get_status R3 
+May 22 08:51:43.667 HYPERVISOR: exec_cmd: vm slot_add_binding R3 0 32 WIC-1T 
+May 22 08:51:43.667 HYPERVISOR: exec_cmd: vm get_status R3 
+May 22 08:51:43.667 HYPERVISOR: exec_cmd: vm slot_add_binding R3 0 48 WIC-2T 
+May 22 08:51:43.722 HYPERVISOR: exec_cmd: vm set_ios R3 C:/Users/rin/GNS3/images/IOS/c3745-adventerprisek9-mz.124-25.image 
+May 22 08:51:48.321 HYPERVISOR: exec_cmd: vm set_ios R3 C:/Users/rin/GNS3/images/IOS/c3745-adventerprisek9-mz.124-25.image 
+May 22 08:52:56.174 HYPERVISOR: exec_cmd: nio create_udp udp-dd75ca60-19b7-4019-a058-39e0965c9f92 10004 127.0.0.1 10005 
+May 22 08:52:56.435 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R3 0 0 udp-dd75ca60-19b7-4019-a058-39e0965c9f92 
+May 22 08:52:56.436 HYPERVISOR: exec_cmd: vm get_status R3 
+May 22 08:53:03.630 HYPERVISOR: exec_cmd: nio create_udp udp-f01adf52-0d19-41b7-95b9-5dc6a8219175 10008 127.0.0.1 10009 
+May 22 08:53:03.634 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R3 0 1 udp-f01adf52-0d19-41b7-95b9-5dc6a8219175 
+May 22 08:53:03.635 HYPERVISOR: exec_cmd: vm get_status R3 
+May 22 08:54:28.063 HYPERVISOR: exec_cmd: vm create Ghost 0 c3745 
+May 22 08:54:28.065 VM: VM Ghost created.
+May 22 08:54:28.066 HYPERVISOR: exec_cmd: vm set_ios Ghost C:/Users/rin/GNS3/images/IOS/c3745-adventerprisek9-mz.124-25.image 
+May 22 08:54:28.068 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+May 22 08:54:28.069 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost C:\Users\rin\GNS3\projects\untitled\project-files\dynamips\c3745-adventerprisek9-mz.124-25.image-128.ghost 
+May 22 08:54:28.070 HYPERVISOR: exec_cmd: vm get_status Ghost 
+May 22 08:54:28.070 HYPERVISOR: exec_cmd: vm set_config Ghost configs\i0_startup-config.cfg 
+May 22 08:54:28.071 HYPERVISOR: exec_cmd: vm start Ghost 
+May 22 08:54:28.543 HYPERVISOR: exec_cmd: vm get_status Ghost 
+May 22 08:54:28.547 HYPERVISOR: exec_cmd: vm stop Ghost 
+May 22 08:54:28.744 VM: VM Ghost shutdown.
+May 22 08:54:28.745 HYPERVISOR: exec_cmd: vm extract_config Ghost 
+May 22 08:54:28.746 HYPERVISOR: exec_cmd: vm clean_delete Ghost 
+May 22 08:54:28.746 VM: VM Ghost destroyed.
+May 22 08:54:28.758 HYPERVISOR: exec_cmd: vm set_ghost_status R3 2 
+May 22 08:54:28.759 HYPERVISOR: exec_cmd: vm set_ghost_file R3 C:\Users\rin\GNS3\projects\untitled\project-files\dynamips\c3745-adventerprisek9-mz.124-25.image-128.ghost 
+May 22 08:54:28.760 HYPERVISOR: exec_cmd: vm get_status R3 
+May 22 08:54:28.782 HYPERVISOR: exec_cmd: vm set_config R3 configs\i3_startup-config.cfg 
+May 22 08:54:28.783 HYPERVISOR: exec_cmd: vm start R3 
+May 22 08:57:19.778 HYPERVISOR: exec_cmd: vm set_ios R3 C:/Users/rin/GNS3/images/IOS/c3745-adventerprisek9-mz.124-25.image 
+May 22 08:57:21.386 HYPERVISOR: exec_cmd: vm set_ios R3 C:/Users/rin/GNS3/images/IOS/c3745-adventerprisek9-mz.124-25.image 
+May 22 08:57:44.441 HYPERVISOR: exec_cmd: vm get_status R3 
+May 22 08:57:44.442 HYPERVISOR: exec_cmd: vm stop R3 
+May 22 08:57:44.576 VM: VM R3 shutdown.
+May 22 08:57:44.578 HYPERVISOR: exec_cmd: vm extract_config R3 
+May 22 08:57:53.807 HYPERVISOR: exec_cmd: vm set_ios R3 C:/Users/rin/GNS3/images/IOS/c3745-adventerprisek9-mz.124-25.image 
+May 22 08:57:55.681 HYPERVISOR: exec_cmd: vm set_ios R3 C:/Users/rin/GNS3/images/IOS/c3745-adventerprisek9-mz.124-25.image 
+May 22 08:58:03.606 HYPERVISOR: exec_cmd: vm set_ios R3 C:/Users/rin/GNS3/images/IOS/c3745-adventerprisek9-mz.124-25.image 
+May 22 08:58:12.136 HYPERVISOR: exec_cmd: vm set_ios R3 C:/Users/rin/GNS3/images/IOS/c3745-adventerprisek9-mz.124-25.image 
+May 22 08:58:17.694 HYPERVISOR: exec_cmd: vm get_status R3 
+May 22 08:58:17.695 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding R3 0 0 
+May 22 08:58:17.697 HYPERVISOR: exec_cmd: nio delete udp-dd75ca60-19b7-4019-a058-39e0965c9f92 
+May 22 08:58:17.714 HYPERVISOR: exec_cmd: vm get_status R3 
+May 22 08:58:17.714 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding R3 0 1 
+May 22 08:58:17.716 HYPERVISOR: exec_cmd: nio delete udp-f01adf52-0d19-41b7-95b9-5dc6a8219175 
+May 22 08:58:18.164 HYPERVISOR: exec_cmd: vm get_status R3 
+May 22 08:58:18.165 HYPERVISOR: exec_cmd: vm extract_config R3 
+May 22 08:58:18.167 HYPERVISOR: exec_cmd: vm delete R3 
+May 22 08:58:18.167 VM: VM R3 destroyed.
+May 22 08:58:18.168 HYPERVISOR: exec_cmd: hypervisor stop 
+May 22 08:58:18.549 HYPERVISOR: Stopped.
+May 22 08:58:18.549 GENERAL: reset done.

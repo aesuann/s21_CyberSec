@@ -1,0 +1,53 @@
+May 22 08:51:39.045 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+May 22 08:51:39.045 HYPERVISOR: Started on IP = localhost, TCP port = 65046.
+May 22 08:51:39.254 HYPERVISOR: exec_cmd: hypervisor version 
+May 22 08:51:39.254 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\rin\GNS3\projects\untitled\project-files\dynamips 
+May 22 08:51:39.269 GENERAL: working_dir=C:\Users\rin\GNS3\projects\untitled\project-files\dynamips
+May 22 08:51:39.269 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\rin\GNS3\projects\untitled\project-files\dynamips\e5cc1007-c559-4bda-a3ab-44353c4d8bab 
+May 22 08:51:39.269 GENERAL: working_dir=C:\Users\rin\GNS3\projects\untitled\project-files\dynamips\e5cc1007-c559-4bda-a3ab-44353c4d8bab
+May 22 08:51:39.269 HYPERVISOR: exec_cmd: vm create R1 1 c3745 
+May 22 08:51:39.269 VM: VM R1 created.
+May 22 08:51:39.269 HYPERVISOR: exec_cmd: vm set_con_tcp_port R1 5000 
+May 22 08:51:39.269 HYPERVISOR: exec_cmd: c3745 get_mac_addr R1 
+May 22 08:51:39.276 HYPERVISOR: exec_cmd: vm set_ios R1 C:/Users/rin/GNS3/images/IOS/c3745-adventerprisek9-mz.124-25.image 
+May 22 08:51:39.276 HYPERVISOR: exec_cmd: vm get_status R1 
+May 22 08:51:39.276 HYPERVISOR: exec_cmd: vm set_idle_pc R1 0x6026e7b8 
+May 22 08:51:39.276 HYPERVISOR: exec_cmd: vm set_exec_area R1 64 
+May 22 08:51:39.276 HYPERVISOR: exec_cmd: vm set_nvram R1 256 
+May 22 08:51:39.279 HYPERVISOR: exec_cmd: vm set_disk0 R1 0 
+May 22 08:51:39.280 HYPERVISOR: exec_cmd: vm get_status R1 
+May 22 08:51:39.280 HYPERVISOR: exec_cmd: vm slot_add_binding R1 1 0 NM-1FE-TX 
+May 22 08:51:39.280 HYPERVISOR: exec_cmd: vm get_status R1 
+May 22 08:51:39.280 HYPERVISOR: exec_cmd: vm slot_add_binding R1 2 0 NM-4T 
+May 22 08:51:39.280 HYPERVISOR: exec_cmd: vm get_status R1 
+May 22 08:51:39.280 HYPERVISOR: exec_cmd: vm slot_add_binding R1 0 32 WIC-1T 
+May 22 08:51:39.283 HYPERVISOR: exec_cmd: vm get_status R1 
+May 22 08:51:39.283 HYPERVISOR: exec_cmd: vm slot_add_binding R1 0 48 WIC-2T 
+May 22 08:51:39.336 HYPERVISOR: exec_cmd: vm set_ios R1 C:/Users/rin/GNS3/images/IOS/c3745-adventerprisek9-mz.124-25.image 
+May 22 08:51:47.403 HYPERVISOR: exec_cmd: vm set_ios R1 C:/Users/rin/GNS3/images/IOS/c3745-adventerprisek9-mz.124-25.image 
+May 22 08:52:55.724 HYPERVISOR: exec_cmd: nio create_udp udp-8e1984c9-4aaf-4f04-b8cb-9830cd8438a9 10002 127.0.0.1 10003 
+May 22 08:52:56.164 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R1 0 0 udp-8e1984c9-4aaf-4f04-b8cb-9830cd8438a9 
+May 22 08:52:56.165 HYPERVISOR: exec_cmd: vm get_status R1 
+May 22 08:54:28.785 HYPERVISOR: exec_cmd: vm set_ghost_status R1 2 
+May 22 08:54:28.801 HYPERVISOR: exec_cmd: vm set_ghost_file R1 C:\Users\rin\GNS3\projects\untitled\project-files\dynamips\c3745-adventerprisek9-mz.124-25.image-128.ghost 
+May 22 08:54:28.802 HYPERVISOR: exec_cmd: vm get_status R1 
+May 22 08:54:28.815 HYPERVISOR: exec_cmd: vm set_config R1 configs\i1_startup-config.cfg 
+May 22 08:54:28.816 HYPERVISOR: exec_cmd: vm start R1 
+May 22 08:56:01.904 HYPERVISOR: exec_cmd: vm set_ios R1 C:/Users/rin/GNS3/images/IOS/c3745-adventerprisek9-mz.124-25.image 
+May 22 08:57:44.442 HYPERVISOR: exec_cmd: vm get_status R1 
+May 22 08:57:44.442 HYPERVISOR: exec_cmd: vm stop R1 
+May 22 08:57:44.577 VM: VM R1 shutdown.
+May 22 08:57:44.579 HYPERVISOR: exec_cmd: vm extract_config R1 
+May 22 08:58:17.682 HYPERVISOR: exec_cmd: vm get_status R1 
+May 22 08:58:17.682 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding R1 0 0 
+May 22 08:58:17.688 HYPERVISOR: exec_cmd: nio delete udp-8e1984c9-4aaf-4f04-b8cb-9830cd8438a9 
+May 22 08:58:50.326 HYPERVISOR: exec_cmd: nio create_udp udp-14ac64e4-a82a-445e-a7a0-27d15219df4b 10002 127.0.0.1 10003 
+May 22 08:58:50.332 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R1 0 0 udp-14ac64e4-a82a-445e-a7a0-27d15219df4b 
+May 22 08:58:50.332 HYPERVISOR: exec_cmd: vm get_status R1 
+May 22 08:59:13.043 HYPERVISOR: exec_cmd: vm set_ghost_status R1 2 
+May 22 08:59:13.045 HYPERVISOR: exec_cmd: vm set_ghost_file R1 C:\Users\rin\GNS3\projects\untitled\project-files\dynamips\c3745-adventerprisek9-mz.124-25.image-128.ghost 
+May 22 08:59:13.046 HYPERVISOR: exec_cmd: vm get_status R1 
+May 22 08:59:13.057 HYPERVISOR: exec_cmd: vm set_config R1 configs\i1_startup-config.cfg 
+May 22 08:59:13.057 HYPERVISOR: exec_cmd: vm start R1 
+May 22 09:19:13.858 HYPERVISOR: exec_cmd: vm extract_config R1 
+May 22 09:19:13.862 HYPERVISOR: exec_cmd: vm extract_config R1 

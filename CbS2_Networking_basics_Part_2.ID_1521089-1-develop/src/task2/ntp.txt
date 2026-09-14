@@ -1,0 +1,4 @@
+Протокол четвертого уровня: UDP
+Source порт: 123
+Destination порт: 123
+Transmit timestamp первого NTP-пакета: Mar 1, 2002 00:18:17.056 UTC

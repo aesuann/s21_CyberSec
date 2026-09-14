@@ -1,0 +1,30 @@
+Jul 13 14:48:58.628 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Jul 13 14:48:58.630 HYPERVISOR: Started on IP = localhost, TCP port = 50847.
+Jul 13 14:48:58.828 HYPERVISOR: exec_cmd: hypervisor version 
+Jul 13 14:48:58.828 HYPERVISOR: exec_cmd: hypervisor working_dir D:\MyProjects\s21_school\CyberSecurity_direction\CbS3_Networking_basics_Part_3.ID_1521090-1\src\Task_OSPF\project-files\dynamips 
+Jul 13 14:48:58.830 GENERAL: working_dir=D:\MyProjects\s21_school\CyberSecurity_direction\CbS3_Networking_basics_Part_3.ID_1521090-1\src\Task_OSPF\project-files\dynamips
+Jul 13 14:48:58.830 HYPERVISOR: exec_cmd: hypervisor working_dir D:\MyProjects\s21_school\CyberSecurity_direction\CbS3_Networking_basics_Part_3.ID_1521090-1\src\Task_OSPF\project-files\dynamips\d8a2b45c-5857-4ff9-8b3b-8b7cc4e2e59e 
+Jul 13 14:48:58.830 GENERAL: working_dir=D:\MyProjects\s21_school\CyberSecurity_direction\CbS3_Networking_basics_Part_3.ID_1521090-1\src\Task_OSPF\project-files\dynamips\d8a2b45c-5857-4ff9-8b3b-8b7cc4e2e59e
+Jul 13 14:48:58.830 HYPERVISOR: exec_cmd: vm create R1 1 c3745 
+Jul 13 14:48:58.831 VM: VM R1 created.
+Jul 13 14:48:58.831 HYPERVISOR: exec_cmd: vm set_con_tcp_port R1 5010 
+Jul 13 14:48:58.831 HYPERVISOR: exec_cmd: c3745 get_mac_addr R1 
+Jul 13 14:48:58.832 HYPERVISOR: exec_cmd: vm set_disk0 R1 0 
+Jul 13 14:48:58.832 HYPERVISOR: exec_cmd: vm set_exec_area R1 64 
+Jul 13 14:48:58.833 HYPERVISOR: exec_cmd: vm set_ios R1 C:/Users/Phili/GNS3/images/IOS/c3745-adventerprisek9-mz.124-25.image 
+Jul 13 14:48:58.834 HYPERVISOR: exec_cmd: c3745 set_mac_addr R1 c401.36a8.0000 
+Jul 13 14:48:58.834 HYPERVISOR: exec_cmd: vm set_nvram R1 256 
+Jul 13 14:48:58.835 HYPERVISOR: exec_cmd: vm set_ram R1 256 
+Jul 13 14:48:58.836 HYPERVISOR: exec_cmd: vm set_con_tcp_port R1 5010 
+Jul 13 14:49:00.098 HYPERVISOR: exec_cmd: nio create_udp udp-7457e808-9127-42b9-9b9d-972a4fcc5e0f 3032 127.0.0.1 3033 
+Jul 13 14:49:00.395 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R1 0 0 udp-7457e808-9127-42b9-9b9d-972a4fcc5e0f 
+Jul 13 14:49:00.396 HYPERVISOR: exec_cmd: vm get_status R1 
+Jul 13 14:49:21.228 HYPERVISOR: exec_cmd: vm get_status R1 
+Jul 13 14:49:21.231 HYPERVISOR: exec_cmd: vm extract_config R1 
+Jul 13 14:49:21.721 HYPERVISOR: exec_cmd: vm get_status R1 
+Jul 13 14:49:21.722 HYPERVISOR: exec_cmd: vm extract_config R1 
+Jul 13 14:49:21.723 HYPERVISOR: exec_cmd: vm delete R1 
+Jul 13 14:49:21.723 VM: VM R1 destroyed.
+Jul 13 14:49:21.724 HYPERVISOR: exec_cmd: hypervisor stop 
+Jul 13 14:49:21.738 HYPERVISOR: Stopped.
+Jul 13 14:49:21.738 GENERAL: reset done.

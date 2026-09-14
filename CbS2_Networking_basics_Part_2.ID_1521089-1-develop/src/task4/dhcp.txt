@@ -1,0 +1,7 @@
+DORA означает:
+D - DHCP Discover
+O - DHCP Offer
+R - DHCP Request
+A - DHCP Ack
+
+Первый DHCP-пакет отправляется на IP-адрес: 255.255.255.255

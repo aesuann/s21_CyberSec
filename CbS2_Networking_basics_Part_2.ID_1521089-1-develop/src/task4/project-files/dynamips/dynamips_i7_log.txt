@@ -1,0 +1,54 @@
+May 22 09:20:21.621 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+May 22 09:20:21.622 HYPERVISOR: Started on IP = localhost, TCP port = 61736.
+May 22 09:20:22.109 HYPERVISOR: exec_cmd: hypervisor version 
+May 22 09:20:22.110 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\rin\GNS3\projects\task1\project-files\dynamips 
+May 22 09:20:22.111 GENERAL: working_dir=C:\Users\rin\GNS3\projects\task1\project-files\dynamips
+May 22 09:20:22.111 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\rin\GNS3\projects\task1\project-files\dynamips\63bf37c2-cc05-41e3-a8c8-097dedd2afb4 
+May 22 09:20:22.111 GENERAL: working_dir=C:\Users\rin\GNS3\projects\task1\project-files\dynamips\63bf37c2-cc05-41e3-a8c8-097dedd2afb4
+May 22 09:20:22.112 HYPERVISOR: exec_cmd: vm create R3 3 c3745 
+May 22 09:20:22.120 VM: VM R3 created.
+May 22 09:20:22.121 HYPERVISOR: exec_cmd: vm set_con_tcp_port R3 5005 
+May 22 09:20:22.121 HYPERVISOR: exec_cmd: c3745 get_mac_addr R3 
+May 22 09:20:22.124 HYPERVISOR: exec_cmd: vm set_disk0 R3 0 
+May 22 09:20:22.125 HYPERVISOR: exec_cmd: vm set_exec_area R3 64 
+May 22 09:20:22.125 HYPERVISOR: exec_cmd: vm get_status R3 
+May 22 09:20:22.126 HYPERVISOR: exec_cmd: vm set_idle_pc R3 0x6026e7b8 
+May 22 09:20:22.128 HYPERVISOR: exec_cmd: vm set_ios R3 C:/Users/rin/GNS3/images/IOS/c3745-adventerprisek9-mz.124-25.image 
+May 22 09:20:22.129 HYPERVISOR: exec_cmd: c3745 set_mac_addr R3 c403.4994.0000 
+May 22 09:20:22.130 HYPERVISOR: exec_cmd: vm set_nvram R3 256 
+May 22 09:20:22.131 HYPERVISOR: exec_cmd: vm get_status R3 
+May 22 09:20:22.131 HYPERVISOR: exec_cmd: vm slot_add_binding R3 1 0 NM-1FE-TX 
+May 22 09:20:22.133 HYPERVISOR: exec_cmd: vm get_status R3 
+May 22 09:20:22.133 HYPERVISOR: exec_cmd: vm slot_add_binding R3 2 0 NM-4T 
+May 22 09:20:22.134 HYPERVISOR: exec_cmd: vm get_status R3 
+May 22 09:20:22.134 HYPERVISOR: exec_cmd: vm slot_add_binding R3 0 32 WIC-1T 
+May 22 09:20:22.135 HYPERVISOR: exec_cmd: vm get_status R3 
+May 22 09:20:22.135 HYPERVISOR: exec_cmd: vm slot_add_binding R3 0 48 WIC-2T 
+May 22 09:20:22.137 HYPERVISOR: exec_cmd: vm set_con_tcp_port R3 5005 
+May 22 09:20:22.873 HYPERVISOR: exec_cmd: nio create_udp udp-d6e3a685-efc7-4a2c-8a1a-bc4488e25a65 10022 127.0.0.1 10023 
+May 22 09:20:23.201 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R3 0 0 udp-d6e3a685-efc7-4a2c-8a1a-bc4488e25a65 
+May 22 09:20:23.202 HYPERVISOR: exec_cmd: vm get_status R3 
+May 22 09:22:14.895 HYPERVISOR: exec_cmd: vm create Ghost 0 c3745 
+May 22 09:22:14.897 VM: VM Ghost created.
+May 22 09:22:14.898 HYPERVISOR: exec_cmd: vm set_ios Ghost C:/Users/rin/GNS3/images/IOS/c3745-adventerprisek9-mz.124-25.image 
+May 22 09:22:14.898 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+May 22 09:22:14.899 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost C:\Users\rin\GNS3\projects\task1\project-files\dynamips\c3745-adventerprisek9-mz.124-25.image-128.ghost 
+May 22 09:22:14.900 HYPERVISOR: exec_cmd: vm get_status Ghost 
+May 22 09:22:14.903 HYPERVISOR: exec_cmd: vm set_config Ghost configs\i0_startup-config.cfg 
+May 22 09:22:14.904 HYPERVISOR: exec_cmd: vm start Ghost 
+May 22 09:22:15.319 HYPERVISOR: exec_cmd: vm get_status Ghost 
+May 22 09:22:15.322 HYPERVISOR: exec_cmd: vm stop Ghost 
+May 22 09:22:15.586 VM: VM Ghost shutdown.
+May 22 09:22:15.587 HYPERVISOR: exec_cmd: vm extract_config Ghost 
+May 22 09:22:15.589 HYPERVISOR: exec_cmd: vm clean_delete Ghost 
+May 22 09:22:15.589 VM: VM Ghost destroyed.
+May 22 09:22:15.597 HYPERVISOR: exec_cmd: vm set_ghost_status R3 2 
+May 22 09:22:15.598 HYPERVISOR: exec_cmd: vm set_ghost_file R3 C:\Users\rin\GNS3\projects\task1\project-files\dynamips\c3745-adventerprisek9-mz.124-25.image-128.ghost 
+May 22 09:22:15.599 HYPERVISOR: exec_cmd: vm get_status R3 
+May 22 09:22:15.611 HYPERVISOR: exec_cmd: vm set_config R3 configs\i3_startup-config.cfg 
+May 22 09:22:15.612 HYPERVISOR: exec_cmd: vm start R3 
+May 22 09:35:56.829 HYPERVISOR: exec_cmd: vm set_ghost_status R3 2 
+May 22 09:35:56.830 HYPERVISOR: exec_cmd: vm set_ghost_file R3 C:\Users\rin\GNS3\projects\task1\project-files\dynamips\c3745-adventerprisek9-mz.124-25.image-128.ghost 
+May 22 09:35:56.831 HYPERVISOR: exec_cmd: vm get_status R3 
+May 22 09:47:46.411 HYPERVISOR: exec_cmd: vm extract_config R3 
+May 22 09:47:46.420 HYPERVISOR: exec_cmd: vm extract_config R3 

@@ -1,0 +1,39 @@
+May 22 09:47:59.991 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+May 22 09:47:59.992 HYPERVISOR: Started on IP = localhost, TCP port = 62098.
+May 22 09:48:00.417 HYPERVISOR: exec_cmd: hypervisor version 
+May 22 09:48:00.418 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\rin\GNS3\projects\task2\project-files\dynamips 
+May 22 09:48:00.418 GENERAL: working_dir=C:\Users\rin\GNS3\projects\task2\project-files\dynamips
+May 22 09:48:00.418 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\rin\GNS3\projects\task2\project-files\dynamips\c5c88784-eb65-4f6c-a5df-e276e757c8fa 
+May 22 09:48:00.419 GENERAL: working_dir=C:\Users\rin\GNS3\projects\task2\project-files\dynamips\c5c88784-eb65-4f6c-a5df-e276e757c8fa
+May 22 09:48:00.419 HYPERVISOR: exec_cmd: vm create R1 1 c3745 
+May 22 09:48:00.444 VM: VM R1 created.
+May 22 09:48:00.445 HYPERVISOR: exec_cmd: vm set_con_tcp_port R1 5000 
+May 22 09:48:00.446 HYPERVISOR: exec_cmd: c3745 get_mac_addr R1 
+May 22 09:48:00.447 HYPERVISOR: exec_cmd: vm set_disk0 R1 0 
+May 22 09:48:00.448 HYPERVISOR: exec_cmd: vm set_exec_area R1 64 
+May 22 09:48:00.450 HYPERVISOR: exec_cmd: vm get_status R1 
+May 22 09:48:00.450 HYPERVISOR: exec_cmd: vm set_idle_pc R1 0x6026e7b8 
+May 22 09:48:00.452 HYPERVISOR: exec_cmd: vm set_ios R1 C:/Users/rin/GNS3/images/IOS/c3745-adventerprisek9-mz.124-25.image 
+May 22 09:48:00.453 HYPERVISOR: exec_cmd: c3745 set_mac_addr R1 c401.5424.0000 
+May 22 09:48:00.455 HYPERVISOR: exec_cmd: vm set_nvram R1 256 
+May 22 09:48:00.456 HYPERVISOR: exec_cmd: vm get_status R1 
+May 22 09:48:00.457 HYPERVISOR: exec_cmd: vm slot_add_binding R1 1 0 NM-1FE-TX 
+May 22 09:48:00.457 HYPERVISOR: exec_cmd: vm get_status R1 
+May 22 09:48:00.459 HYPERVISOR: exec_cmd: vm slot_add_binding R1 2 0 NM-4T 
+May 22 09:48:00.459 HYPERVISOR: exec_cmd: vm get_status R1 
+May 22 09:48:00.460 HYPERVISOR: exec_cmd: vm slot_add_binding R1 0 32 WIC-1T 
+May 22 09:48:00.460 HYPERVISOR: exec_cmd: vm get_status R1 
+May 22 09:48:00.461 HYPERVISOR: exec_cmd: vm slot_add_binding R1 0 48 WIC-2T 
+May 22 09:48:00.463 HYPERVISOR: exec_cmd: vm set_con_tcp_port R1 5000 
+May 22 09:48:01.809 HYPERVISOR: exec_cmd: nio create_udp udp-506a5f6a-0f0e-4ef1-9f12-f0a924525c78 10002 127.0.0.1 10003 
+May 22 09:48:02.159 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R1 0 0 udp-506a5f6a-0f0e-4ef1-9f12-f0a924525c78 
+May 22 09:48:02.160 HYPERVISOR: exec_cmd: vm get_status R1 
+May 22 10:02:49.952 HYPERVISOR: exec_cmd: vm set_ghost_status R1 2 
+May 22 10:02:49.967 HYPERVISOR: exec_cmd: vm set_ghost_file R1 C:\Users\rin\GNS3\projects\task2\project-files\dynamips\c3745-adventerprisek9-mz.124-25.image-128.ghost 
+May 22 10:02:49.968 HYPERVISOR: exec_cmd: vm get_status R1 
+May 22 10:02:49.983 HYPERVISOR: exec_cmd: vm set_config R1 configs\i1_startup-config.cfg 
+May 22 10:02:49.984 HYPERVISOR: exec_cmd: vm start R1 
+May 22 10:08:50.876 HYPERVISOR: exec_cmd: nio bind_filter udp-506a5f6a-0f0e-4ef1-9f12-f0a924525c78 2 capture 
+May 22 10:08:50.877 HYPERVISOR: exec_cmd: nio setup_filter udp-506a5f6a-0f0e-4ef1-9f12-f0a924525c78 2 en10mb C:\Users\rin\GNS3\projects\task2\project-files\captures\R1_FastEthernet00_to_R2_FastEthernet00.pcap 
+May 22 10:11:20.539 HYPERVISOR: exec_cmd: vm extract_config R1 
+May 22 10:11:20.543 HYPERVISOR: exec_cmd: vm extract_config R1 

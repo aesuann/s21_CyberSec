@@ -1,0 +1,1 @@
+0 0 * * * /usr/sbin/logwatch --detail High --mailto alina.tsi13@gmail.com --range yesterday

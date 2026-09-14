@@ -1,0 +1,92 @@
+Sep 07 16:08:47.971 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Sep 07 16:08:47.972 HYPERVISOR: Started on IP = localhost, TCP port = 60370.
+Sep 07 16:08:48.434 HYPERVISOR: exec_cmd: hypervisor version 
+Sep 07 16:08:48.435 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\rin\GNS3\projects\CBS3_tsk1\project-files\dynamips 
+Sep 07 16:08:48.435 GENERAL: working_dir=C:\Users\rin\GNS3\projects\CBS3_tsk1\project-files\dynamips
+Sep 07 16:08:48.436 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\rin\GNS3\projects\CBS3_tsk1\project-files\dynamips\9594310f-0e75-4b00-bff5-d672b39c160f 
+Sep 07 16:08:48.437 GENERAL: working_dir=C:\Users\rin\GNS3\projects\CBS3_tsk1\project-files\dynamips\9594310f-0e75-4b00-bff5-d672b39c160f
+Sep 07 16:08:48.437 HYPERVISOR: exec_cmd: vm create ESW2 2 c3745 
+Sep 07 16:08:48.440 VM: VM ESW2 created.
+Sep 07 16:08:48.441 HYPERVISOR: exec_cmd: vm set_con_tcp_port ESW2 5001 
+Sep 07 16:08:48.441 HYPERVISOR: exec_cmd: c3745 get_mac_addr ESW2 
+Sep 07 16:08:48.442 HYPERVISOR: exec_cmd: vm set_ios ESW2 C:/Users/rin/GNS3/images/IOS/c3745-adventerprisek9-mz.124-25.image 
+Sep 07 16:08:48.443 HYPERVISOR: exec_cmd: vm set_exec_area ESW2 64 
+Sep 07 16:08:48.444 HYPERVISOR: exec_cmd: vm set_ram ESW2 256 
+Sep 07 16:08:48.445 HYPERVISOR: exec_cmd: vm set_nvram ESW2 256 
+Sep 07 16:08:48.445 HYPERVISOR: exec_cmd: vm set_disk0 ESW2 1 
+Sep 07 16:08:48.447 HYPERVISOR: exec_cmd: vm get_status ESW2 
+Sep 07 16:08:48.447 HYPERVISOR: exec_cmd: vm slot_add_binding ESW2 1 0 NM-16ESW 
+Sep 07 16:08:48.504 HYPERVISOR: exec_cmd: vm set_ios ESW2 C:/Users/rin/GNS3/images/IOS/c3745-adventerprisek9-mz.124-25.image 
+Sep 07 16:08:50.982 HYPERVISOR: exec_cmd: vm set_ios ESW2 C:/Users/rin/GNS3/images/IOS/c3745-adventerprisek9-mz.124-25.image 
+Sep 07 16:09:05.762 HYPERVISOR: exec_cmd: vm set_ios ESW2 C:/Users/rin/GNS3/images/IOS/c3745-adventerprisek9-mz.124-25.image 
+Sep 07 16:09:07.413 HYPERVISOR: exec_cmd: vm set_ios ESW2 C:/Users/rin/GNS3/images/IOS/c3745-adventerprisek9-mz.124-25.image 
+Sep 07 16:09:36.116 HYPERVISOR: exec_cmd: nio create_udp udp-2f6ebbd1-a8e0-4310-bfd7-19208f1f4544 10010 127.0.0.1 10011 
+Sep 07 16:09:36.398 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ESW2 1 0 udp-2f6ebbd1-a8e0-4310-bfd7-19208f1f4544 
+Sep 07 16:09:36.401 HYPERVISOR: exec_cmd: vm get_status ESW2 
+Sep 07 16:09:44.347 HYPERVISOR: exec_cmd: nio create_udp udp-d5da1e11-d6df-426e-a68f-291f37a332ec 10014 127.0.0.1 10015 
+Sep 07 16:09:44.353 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ESW2 1 1 udp-d5da1e11-d6df-426e-a68f-291f37a332ec 
+Sep 07 16:09:44.354 HYPERVISOR: exec_cmd: vm get_status ESW2 
+Sep 07 16:09:52.415 HYPERVISOR: exec_cmd: nio create_udp udp-05ae25bf-5dcf-4bc0-9b82-f50dc32416e9 10020 127.0.0.1 10021 
+Sep 07 16:09:52.419 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ESW2 1 15 udp-05ae25bf-5dcf-4bc0-9b82-f50dc32416e9 
+Sep 07 16:09:52.420 HYPERVISOR: exec_cmd: vm get_status ESW2 
+Sep 07 16:09:55.235 HYPERVISOR: exec_cmd: vm create Ghost 0 c3745 
+Sep 07 16:09:55.237 VM: VM Ghost created.
+Sep 07 16:09:55.238 HYPERVISOR: exec_cmd: vm set_ios Ghost C:/Users/rin/GNS3/images/IOS/c3745-adventerprisek9-mz.124-25.image 
+Sep 07 16:09:55.239 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+Sep 07 16:09:55.240 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost C:\Users\rin\GNS3\projects\CBS3_tsk1\project-files\dynamips\c3745-adventerprisek9-mz.124-25.image-256.ghost 
+Sep 07 16:09:55.241 HYPERVISOR: exec_cmd: vm set_ram Ghost 256 
+Sep 07 16:09:55.242 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Sep 07 16:09:55.243 HYPERVISOR: exec_cmd: vm set_config Ghost configs\i0_startup-config.cfg 
+Sep 07 16:09:55.243 HYPERVISOR: exec_cmd: vm start Ghost 
+Sep 07 16:09:55.615 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Sep 07 16:09:55.617 HYPERVISOR: exec_cmd: vm stop Ghost 
+Sep 07 16:09:55.680 VM: VM Ghost shutdown.
+Sep 07 16:09:55.682 HYPERVISOR: exec_cmd: vm extract_config Ghost 
+Sep 07 16:09:55.684 HYPERVISOR: exec_cmd: vm clean_delete Ghost 
+Sep 07 16:09:55.684 VM: VM Ghost destroyed.
+Sep 07 16:09:55.692 HYPERVISOR: exec_cmd: vm set_ghost_status ESW2 2 
+Sep 07 16:09:55.693 HYPERVISOR: exec_cmd: vm set_ghost_file ESW2 C:\Users\rin\GNS3\projects\CBS3_tsk1\project-files\dynamips\c3745-adventerprisek9-mz.124-25.image-256.ghost 
+Sep 07 16:09:55.694 HYPERVISOR: exec_cmd: vm get_status ESW2 
+Sep 07 16:09:55.705 HYPERVISOR: exec_cmd: vm set_config ESW2 configs\i2_startup-config.cfg 
+Sep 07 16:09:55.706 HYPERVISOR: exec_cmd: vm start ESW2 
+Sep 07 16:11:05.944 HYPERVISOR: exec_cmd: vm get_status ESW2 
+Sep 07 16:11:05.947 HYPERVISOR: exec_cmd: vm stop ESW2 
+Sep 07 16:11:06.163 VM: VM ESW2 shutdown.
+Sep 07 16:11:06.165 HYPERVISOR: exec_cmd: vm extract_config ESW2 
+Sep 07 16:12:23.799 HYPERVISOR: exec_cmd: vm set_ios ESW2 C:/Users/rin/GNS3/images/IOS/c3745-adventerprisek9-mz.124-25.image 
+Sep 07 16:12:23.801 HYPERVISOR: exec_cmd: vm rename ESW2 SW2 
+Sep 07 16:12:23.842 HYPERVISOR: exec_cmd: vm set_ios SW2 C:/Users/rin/GNS3/images/IOS/c3745-adventerprisek9-mz.124-25.image 
+Sep 07 16:15:32.118 HYPERVISOR: exec_cmd: vm set_ghost_status SW2 2 
+Sep 07 16:15:32.148 HYPERVISOR: exec_cmd: vm set_ghost_file SW2 C:\Users\rin\GNS3\projects\CBS3_tsk1\project-files\dynamips\c3745-adventerprisek9-mz.124-25.image-256.ghost 
+Sep 07 16:15:32.149 HYPERVISOR: exec_cmd: vm get_status SW2 
+Sep 07 16:15:32.165 HYPERVISOR: exec_cmd: vm set_config SW2 configs\i2_startup-config.cfg 
+Sep 07 16:15:32.166 HYPERVISOR: exec_cmd: vm start SW2 
+Sep 07 16:28:00.434 HYPERVISOR: exec_cmd: vm get_status SW2 
+Sep 07 16:28:00.434 HYPERVISOR: exec_cmd: vm stop SW2 
+Sep 07 16:28:00.591 VM: VM SW2 shutdown.
+Sep 07 16:28:00.594 HYPERVISOR: exec_cmd: vm extract_config SW2 
+Sep 07 16:28:03.336 HYPERVISOR: exec_cmd: vm set_ghost_status SW2 2 
+Sep 07 16:28:03.351 HYPERVISOR: exec_cmd: vm set_ghost_file SW2 C:\Users\rin\GNS3\projects\CBS3_tsk1\project-files\dynamips\c3745-adventerprisek9-mz.124-25.image-256.ghost 
+Sep 07 16:28:03.352 HYPERVISOR: exec_cmd: vm get_status SW2 
+Sep 07 16:28:03.363 HYPERVISOR: exec_cmd: vm set_config SW2 configs\i2_startup-config.cfg 
+Sep 07 16:28:03.363 HYPERVISOR: exec_cmd: vm start SW2 
+Sep 07 16:32:33.834 HYPERVISOR: exec_cmd: vm extract_config SW2 
+Sep 07 16:32:33.843 HYPERVISOR: exec_cmd: vm extract_config SW2 
+Sep 07 16:35:22.603 HYPERVISOR: exec_cmd: vm get_status SW2 
+Sep 07 16:35:22.604 HYPERVISOR: exec_cmd: vm stop SW2 
+Sep 07 16:35:22.830 VM: VM SW2 shutdown.
+Sep 07 16:35:22.832 HYPERVISOR: exec_cmd: vm extract_config SW2 
+Sep 07 16:35:25.292 HYPERVISOR: exec_cmd: vm set_ghost_status SW2 2 
+Sep 07 16:35:25.312 HYPERVISOR: exec_cmd: vm set_ghost_file SW2 C:\Users\rin\GNS3\projects\CBS3_tsk1\project-files\dynamips\c3745-adventerprisek9-mz.124-25.image-256.ghost 
+Sep 07 16:35:25.313 HYPERVISOR: exec_cmd: vm get_status SW2 
+Sep 07 16:35:25.322 HYPERVISOR: exec_cmd: vm set_config SW2 configs\i2_startup-config.cfg 
+Sep 07 16:35:25.323 HYPERVISOR: exec_cmd: vm start SW2 
+Sep 07 16:37:33.065 HYPERVISOR: exec_cmd: vm get_status SW2 
+Sep 07 16:37:33.065 HYPERVISOR: exec_cmd: vm stop SW2 
+Sep 07 16:37:33.279 VM: VM SW2 shutdown.
+Sep 07 16:37:33.280 HYPERVISOR: exec_cmd: vm extract_config SW2 
+Sep 07 16:38:22.855 HYPERVISOR: exec_cmd: vm set_ghost_status SW2 2 
+Sep 07 16:38:22.856 HYPERVISOR: exec_cmd: vm set_ghost_file SW2 C:\Users\rin\GNS3\projects\CBS3_tsk1\project-files\dynamips\c3745-adventerprisek9-mz.124-25.image-256.ghost 
+Sep 07 16:38:22.857 HYPERVISOR: exec_cmd: vm get_status SW2 
+Sep 07 16:38:22.867 HYPERVISOR: exec_cmd: vm set_config SW2 configs\i2_startup-config.cfg 
+Sep 07 16:38:22.868 HYPERVISOR: exec_cmd: vm start SW2 
